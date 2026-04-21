@@ -141,6 +141,28 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Language Toggle
+--------------------------------------------------------------*/
+.lang-toggle-btn {
+  background: transparent;
+  border: 2px solid #149ddd;
+  color: #149ddd;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: 0.3s;
+  letter-spacing: 1px;
+}
+
+.lang-toggle-btn:hover {
+  background: #149ddd;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
@@ -253,6 +275,7 @@ h6 {
   margin: 0 0 10px 0;
   font-size: 64px;
   font-weight: 700;
+  overflow-wrap: break-word;
   line-height: 56px;
   color: #fff;
 }
@@ -451,6 +474,30 @@ section {
   height: 10px;
   transition: 0.9s;
   background-color: #149ddd;
+}
+
+.skills .skills-grid .col-lg-3 {
+  margin-bottom: 10px !important;
+}
+
+.skills .skill-item {
+  padding: 10px 5px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.skills .skill-item:hover {
+  background: #e2eff9;
+  transform: translateY(-4px);
+}
+
+.skills .skill-item h6 {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #050d18;
 }
 
 /*--------------------------------------------------------------

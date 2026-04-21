@@ -141,6 +141,28 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Language Toggle
+--------------------------------------------------------------*/
+.lang-toggle-btn {
+  background: transparent;
+  border: 2px solid #149ddd;
+  color: #149ddd;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: 0.3s;
+  letter-spacing: 1px;
+}
+
+.lang-toggle-btn:hover {
+  background: #149ddd;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
@@ -253,6 +275,7 @@ h6 {
   margin: 0 0 10px 0;
   font-size: 64px;
   font-weight: 700;
+  overflow-wrap: break-word;
   line-height: 56px;
   color: #fff;
 }

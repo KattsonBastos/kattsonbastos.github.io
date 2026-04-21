@@ -51,17 +51,21 @@
           <a href="https://www.linkedin.com/in/kattson-bastos/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
           <a href="https://github.com/KattsonBastos" class="github" target="_blank"><i class="bx bxl-github"></i></a>
           <a href="https://medium.com/@kattsonbastos" class="medium" target="_blank"><i class="bx bxl-medium"></i></a>
-          
+        </div>
+        <div class="text-center mt-3">
+          <button id="lang-toggle" class="lang-toggle-btn" onclick="toggleLanguage()">
+            <span id="lang-label">PT</span>
+          </button>
         </div>
       </div>
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-certification"></i> <span>Certifications</span></a></li>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span data-i18n="nav_home">Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span data-i18n="nav_about">About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span data-i18n="nav_resume">Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span data-i18n="nav_portfolio">Portfolio</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-certification"></i> <span data-i18n="nav_certifications">Certifications</span></a></li>
           <!-- <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li> -->
         </ul>
       </nav><!-- .nav-menu -->
@@ -71,8 +75,8 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
-      <h1 style='color:rgb(0, 110, 255)'>Data Platform Specialist</h1><br><h1>Kattson Bastos</h1>
-      <p><span class="typed" data-typed-items="DevOps in Mind, DataOps in Heart"></span></p>
+      <h1 style='color:rgb(0, 110, 255)' data-i18n="hero_title">Data Platform Specialist</h1><br><h1>Kattson Bastos</h1>
+      <p><span class="typed" id="typed-element" data-typed-items="DevOps in Mind, DataOps in Heart"></span></p>
     </div>
   </section><!-- End Hero -->
 
@@ -83,8 +87,8 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>About</h2>
-          <p>Engineer with experience in reliability and operation of large-scale data and tech platforms, working with container orchestration, infrastructure as code, observability, and CI/CD pipeline automation.
+          <h2 data-i18n="about_title">About</h2>
+          <p data-i18n="about_desc">Engineer with experience in reliability and operation of large-scale data and tech platforms, working with container orchestration, infrastructure as code, observability, and CI/CD pipeline automation.
             <br>
             Experienced in cloud environments with a focus on scalability, resilience, and infrastructure security, as well as technical coordination of teams and projects.</p>
         </div>
@@ -94,25 +98,25 @@
             <img src="assets/img/me.jpeg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Data Platform Specialist</h3>
-            <p class="fst-italic">
+            <h3 data-i18n="about_role">Data Platform Specialist</h3>
+            <p class="fst-italic" data-i18n="about_tagline">
               Building reliable, scalable, and secure data platforms with a focus on observability, automation, and cloud-native infrastructure.
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Vitória da Conquista, BA, Brazil</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Languages:</strong> <span>Python, Java, Go</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_city_label">City:</strong> <span data-i18n="about_city">Vitória da Conquista, BA, Brazil</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_languages_label">Languages:</strong> <span>Python, Java, Go</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>kattsonbastos@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Cloud:</strong> <span>GCP, Azure</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_cloud_label">Cloud:</strong> <span>GCP, Azure</span></li>
                 </ul>
               </div>
             </div>
-            <p>
+            <p data-i18n="about_tools">
               Skilled in DevOps tools such as Docker, Kubernetes, Terraform, ArgoCD, and OpenTelemetry, with cloud experience in GCP and Azure.
             </p>
           </div>
@@ -175,8 +179,8 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Skills</h2>
-          <p>Core technical skills across programming languages, infrastructure, and DevOps tooling that I use daily to build and operate reliable platforms.</p>
+          <h2 data-i18n="skills_title">Skills</h2>
+          <p data-i18n="skills_desc">Core technical skills across programming languages, infrastructure, and DevOps tooling that I use daily to build and operate reliable platforms.</p>
         </div>
 
         <div class="row skills-grid" data-aos="fade-up">
@@ -303,70 +307,70 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Resume</h2>
-          <p>Professional with experience in reliability and operation of large-scale data and tech platforms, working with container orchestration, infrastructure as code, observability, and CI/CD pipeline automation. Experienced in cloud environments with a focus on scalability, resilience, and infrastructure security, as well as technical coordination of teams and projects.</p>
+          <h2 data-i18n="resume_title">Resume</h2>
+          <p data-i18n="resume_desc">Professional with experience in reliability and operation of large-scale data and tech platforms, working with container orchestration, infrastructure as code, observability, and CI/CD pipeline automation. Experienced in cloud environments with a focus on scalability, resilience, and infrastructure security, as well as technical coordination of teams and projects.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Summary</h3>
+            <h3 class="resume-title" data-i18n="resume_summary">Summary</h3>
             <div class="resume-item pb-0">
               <h4>Kattson Bastos</h4>
-              <p><em>Data Platform Engineer with experience in SRE, DevOps, data engineering, and ML, building scalable and reliable data infrastructure in cloud environments.</em></p>
+              <p><em data-i18n="resume_summary_desc">Data Platform Engineer with experience in SRE, DevOps, data engineering, and ML, building scalable and reliable data infrastructure in cloud environments.</em></p>
               <ul>
                 <li>Vitória da Conquista, BA, Brazil</li>
                 <li>kattsonbastos@gmail.com</li>
               </ul>
             </div>
 
-            <h3 class="resume-title" style='color:#1E5B3B'>Education</h3>
+            <h3 class="resume-title" style='color:#1E5B3B' data-i18n="resume_education">Education</h3>
             <div class="resume-item">
-              <h4>Specialization in Applied Generative AI</h4>
+              <h4 data-i18n="resume_edu_1_title">Specialization in Applied Generative AI</h4>
               <h5>Mar. 2026 - Dec. 2027</h5>
               <p><em>Universidade Tecnológica Federal do Paraná (UTFPR)</em></p>
             </div>
             <div class="resume-item">
-              <h4>MBA in Software Architecture</h4>
+              <h4 data-i18n="resume_edu_2_title">MBA in Software Architecture</h4>
               <h5>Jul. 2023 - Jun. 2025</h5>
               <p><em>Faculdade Brasília</em></p>
             </div>
             <div class="resume-item">
-              <h4>BS in Economics</h4>
+              <h4 data-i18n="resume_edu_3_title">BS in Economics</h4>
               <h5>Jul. 2017 - Dec. 2023</h5>
               <p><em>Universidade Estadual do Sudoeste da Bahia (UESB)</em></p>
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title" style='color:#25629F'>Professional Experience</h3>
+            <h3 class="resume-title" style='color:#25629F' data-i18n="resume_experience">Professional Experience</h3>
             <div class="resume-item">
-              <h4>Data Platform Specialist</h4>
-              <h5>Aug. 2024 - Present</h5>
+              <h4 data-i18n="resume_exp_1_title">Data Platform Specialist</h4>
+              <h5 data-i18n="resume_exp_1_date">Aug. 2024 - Present</h5>
               <p><em>Grupo Boticário</em></p>
-              <p>Site Reliability Engineering (SRE) of the data platform, involving security, observability, maintenance and product development, API development and automation, providing greater security, scalability, and resilience to the data platform, as well as design, standardization, and implementation of CI/CD pipelines.</p>
+              <p data-i18n="resume_exp_1_desc">Site Reliability Engineering (SRE) of the data platform, involving security, observability, maintenance and product development, API development and automation, providing greater security, scalability, and resilience to the data platform, as well as design, standardization, and implementation of CI/CD pipelines.</p>
             </div>
             <div class="resume-item">
-              <h4>Data Coordinator</h4>
-              <h5>Apr. 2023 - Aug. 2024</h5>
+              <h4 data-i18n="resume_exp_2_title">Data Coordinator</h4>
+              <h5 data-i18n="resume_exp_2_date">Apr. 2023 - Aug. 2024</h5>
               <p><em>Cartesius Capital</em></p>
-              <p>Coordination of Data Science and Data Engineering projects and teams, also working on the design and implementation of production models, data processing pipelines, and data visualization, as well as planning and implementing solutions in cloud production environments.</p>
+              <p data-i18n="resume_exp_2_desc">Coordination of Data Science and Data Engineering projects and teams, also working on the design and implementation of production models, data processing pipelines, and data visualization, as well as planning and implementing solutions in cloud production environments.</p>
             </div>
             <div class="resume-item">
-              <h4>Senior Data Scientist</h4>
-              <h5>Mar. 2022 - Apr. 2023</h5>
+              <h4 data-i18n="resume_exp_3_title">Senior Data Scientist</h4>
+              <h5 data-i18n="resume_exp_3_date">Mar. 2022 - Apr. 2023</h5>
               <p><em>Kogui Tecnologia</em></p>
-              <p>Consulting projects with solution design, building and productionizing ML models in Signal Processing and Time Series classification; design and implementation of data ingestion and transformation pipelines with SQL, Luigi, and Airflow; backend API development with Python, Flask, and FastAPI.</p>
+              <p data-i18n="resume_exp_3_desc">Consulting projects with solution design, building and productionizing ML models in Signal Processing and Time Series classification; design and implementation of data ingestion and transformation pipelines with SQL, Luigi, and Airflow; backend API development with Python, Flask, and FastAPI.</p>
             </div>
             <div class="resume-item">
-              <h4>Data Scientist</h4>
-              <h5>Aug. 2021 - Mar. 2022</h5>
+              <h4 data-i18n="resume_exp_4_title">Data Scientist</h4>
+              <h5 data-i18n="resume_exp_4_date">Aug. 2021 - Mar. 2022</h5>
               <p><em>Builtcode</em></p>
-              <p>Audio signal processing projects and development/monitoring of production models and MLOps (MLFlow, Flask, Docker, and Azure/GCP); transactional database modeling and optimization.</p>
+              <p data-i18n="resume_exp_4_desc">Audio signal processing projects and development/monitoring of production models and MLOps (MLFlow, Flask, Docker, and Azure/GCP); transactional database modeling and optimization.</p>
             </div>
             <div class="resume-item">
-              <h4>Data Science Intern</h4>
-              <h5>Mar. 2021 - Aug. 2021</h5>
+              <h4 data-i18n="resume_exp_5_title">Data Science Intern</h4>
+              <h5 data-i18n="resume_exp_5_date">Mar. 2021 - Aug. 2021</h5>
               <p><em>Builtcode</em></p>
-              <p>Development of Machine Learning experiments in audio signal processing and development of dashboards for data visualization.</p>
+              <p data-i18n="resume_exp_5_desc">Development of Machine Learning experiments in audio signal processing and development of dashboards for data visualization.</p>
             </div>
           </div>
         </div>
@@ -379,16 +383,16 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>A selection of personal and professional projects in DevOps, DataOps, and AI.</p>
+          <h2 data-i18n="portfolio_title">Portfolio</h2>
+          <p data-i18n="portfolio_desc">A selection of personal and professional projects in DevOps, DataOps, and AI.</p>
         </div>
 
         <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-devops">DevOps/DataOps</li>
-              <li data-filter=".filter-ai">AI & Data Science</li>
+              <li data-filter="*" class="filter-active" data-i18n="portfolio_all">All</li>
+              <li data-filter=".filter-devops" data-i18n="portfolio_devops">DevOps/DataOps</li>
+              <li data-filter=".filter-ai" data-i18n="portfolio_ai">AI & Data Science</li>
             </ul>
           </div>
         </div>
@@ -477,8 +481,8 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Certifications</h2>
-          <p>Professional certifications in cloud platforms, data engineering, and systems administration.</p>
+          <h2 data-i18n="cert_title">Certifications</h2>
+          <p data-i18n="cert_desc">Professional certifications in cloud platforms, data engineering, and systems administration.</p>
         </div>
 
         <div class="row">
@@ -489,7 +493,7 @@
             <h4 class="title"><a href="https://learn.microsoft.com/api/credentials/share/en-us/kattsonbastos/6BA497E7A7522736?sharingId=E92D6F2808BA33B9" target="_blank">
               Microsoft Certified: Azure Developer Associate
             </a></h4>
-            <p class="description" style="text-align: justify;">Build end-to-end solutions in Microsoft Azure to create Azure Functions, implement and manage web apps, 
+            <p class="description" style="text-align: justify;" data-i18n="cert_1_desc">Build end-to-end solutions in Microsoft Azure to create Azure Functions, implement and manage web apps,
               develop solutions utilizing Azure storage, Event Hubs, CosmosDB, Synapse Analytics, and more. </p>
           </div>
 
@@ -500,7 +504,7 @@
             <h4 class="title"><a href="https://learn.microsoft.com/api/credentials/share/en-us/kattsonbastos/D467997203481C2C?sharingId=E92D6F2808BA33B9" target="_blank">
               Microsoft Certified: Azure Data Fundamentals
             </a></h4>
-            <p  class="description" style="text-align: justify;">Demonstrate foundational knowledge of core data concepts related to Microsoft Azure data services. </p>
+            <p class="description" style="text-align: justify;" data-i18n="cert_2_desc">Demonstrate foundational knowledge of core data concepts related to Microsoft Azure data services. </p>
           </div>
 
         <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
@@ -510,7 +514,7 @@
           <h4 class="title"><a href="https://www.credly.com/badges/191f3091-b10e-429c-86e2-1f5ec754f08e/public_url" target="_blank">
             Astronomer Certification DAG Authoring for Apache Airflow
           </a></h4>
-          <p class="description" style="text-align: justify;">Earners can demonstrate the skills 
+          <p class="description" style="text-align: justify;" data-i18n="cert_3_desc">Earners can demonstrate the skills
             needed to effectively create reliable and powerful DAGs following best practices on Apache Airflow.</p>
         </div>
 
@@ -521,7 +525,7 @@
           <h4 class="title"><a href="https://www.credly.com/badges/d552c6ec-6c18-4f62-b69d-3e3d26ccad46/public_url" target="_blank">
             Astronomer Certification for Apache Airflow Fundamentals
           </a></h4>
-          <p class="description" style="text-align: justify;">Earners can demonstrate the fundamental skills needed to create,
+          <p class="description" style="text-align: justify;" data-i18n="cert_4_desc">Earners can demonstrate the fundamental skills needed to create,
             manage and monitor DAGs on Apache Airflow effectively.</p>
         </div>
 
@@ -530,7 +534,7 @@
             <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/hdd-network.svg" alt="linux-networking" style="width: 40px; height: 40px;">
           </div>
           <h4 class="title"><a href="https://e-certificado.com/login/visualizar?c=1457767A1184C4799808870" target="_blank">Network and Linux Systems Engineering</a></h4>
-          <p class="description" style="text-align: justify;">Foundations of Linux system administration and computer networking, covering topics such as network protocols, routing, firewall configuration, shell scripting, and server management.</p>
+          <p class="description" style="text-align: justify;" data-i18n="cert_5_desc">Foundations of Linux system administration and computer networking, covering topics such as network protocols, routing, firewall configuration, shell scripting, and server management.</p>
         </div>
       </div>
 
@@ -571,6 +575,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Language Switcher -->
+  <script src="assets/js/i18n.js"></script>
 
 </body>
 
